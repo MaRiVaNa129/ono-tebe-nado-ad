@@ -423,24 +423,6 @@ body {
   top: 284px;
 }
 
-.card__text {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
-
-.card_type_film .card__text {
-  -webkit-line-clamp: 5;
-}
-
-.card_type_book .card__text {
-  -webkit-line-clamp: 15;
-}
-
-.card_type_picture .card__text {
-  -webkit-line-clamp: 11;
-}
-
 .lots__look-more-link {
   font-size: 20px;
   margin-left: 40px;
