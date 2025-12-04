@@ -1,1 +1,696 @@
-/* место для вашего кода */
+/* Базовые стили */
+body {
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  color: #000;
+  background-color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-width: 1100px;
+  position: relative; /* ДОБАВИТЬ ЭТО! */
+}
+
+/* ---------------- */
+/* HEADER */
+/* ---------------- */
+
+.header {
+  position: absolute;
+  width: 1100px;
+  height: 293px;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== МЕНЮ ===== */
+
+/* "главная" */
+.header__link_main {
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  left: 50px;
+  top: 133px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* "посмотреть лоты" - точка */
+.header__dot_lots {
+  box-sizing: border-box;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 130px;
+  top: 142px;
+  border: 0.5px solid #000000;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* "посмотреть лоты" - текст */
+.header__link_lots {
+  position: absolute;
+  width: 149px;
+  height: 21px;
+  left: 148.48px;
+  top: 133px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* "посмотреть лоты" - подчеркивание */
+.header__underline_lots {
+  position: absolute;
+  width: 151px;
+  height: 1px; /* меняем с 0px на 1px */
+  left: 148.48px;
+  top: 155px;
+  background-color: #000000; /* вместо border */
+}
+
+/* "об аукционе" - точка */
+.header__dot_about {
+  box-sizing: border-box;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 312px;
+  top: 142px;
+  border: 0.5px solid #000000;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* "об аукционе" - текст */
+.header__link_about {
+  position: absolute;
+  width: 108px;
+  height: 21px;
+  left: 331.48px;
+  top: 133px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* "об аукционе" - подчеркивание */
+.header__underline_about {
+  position: absolute;
+  width: 110px;
+  height: 1px; /* меняем с 0px на 1px */
+  left: 331.48px;
+  top: 155px;
+  background-color: #000000; /* вместо border */
+}
+
+/* ===== ЛОГОТИП ===== */
+
+/* Контейнер логотипа */
+.header__logo {
+  position: absolute;
+  width: 148px;
+  height: 105px;
+  left: calc(50% - 148px/2 + 2px);
+  top: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header__logo-image-container {
+  width: 129.11px;
+  height: 104.65px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.header__logo-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Черный фон логотипа */
+.header__logo-bg {
+  position: absolute;
+  width: 129.11px;
+  height: 104.65px;
+  left: 9.03px;
+  top: 1.16px;
+  background: #000000;
+}
+
+/* Белая рамка логотипа */
+.header__logo-outline {
+  position: absolute;
+  width: 124.05px;
+  height: 94.84px;
+  left: 11.39px;
+  top: 2.79px;
+  border: 6px solid #000000;
+  box-sizing: border-box;
+}
+
+/* ===== КОНТАКТЫ ===== */
+
+/* Телефон */
+.header__phone {
+  position: absolute;
+  width: 239.48px;
+  height: 24px;
+  left: 810.52px;
+  top: 95px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Подчеркивание телефона */
+.header__phone-underline {
+  position: absolute;
+  width: 131.71px;
+  height: 1px; /* меняем с 0px на 1px */
+  left: 810.52px;
+  top: 119px;
+  background-color: #000000; /* вместо border */
+}
+
+/* Почта */
+.header__email {
+  position: absolute;
+  width: 239.48px;
+  height: 24px;
+  left: 810px;
+  top: 119px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Подчеркивание почты */
+.header__email-underline {
+  position: absolute;
+  width: 129.72px;
+  height: 1px; 
+  left: 810px;
+  top: 143px;
+  background-color: #000000; /* вместо border */
+}
+
+/* Адрес */
+.header__address {
+  position: absolute;
+  width: 236.49px;
+  height: 49px;
+  left: 811px;
+  top: 144px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+/* ---------------- */
+/* COVER */
+/* ---------------- */
+.cover {
+  position: absolute;
+  width: 1100px;
+  height: 757px;
+  top: 293px; /* начинается после header */
+  left: calc(50% - 550px);
+  color: #fff;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.cover__title {
+  position: relative;
+  width: 1000px;
+  height: 385px;
+  margin: 165px auto 0;
+  z-index: 1;
+}
+
+.aligned-text {
+  display: block;
+  position: absolute;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 30px;
+  height: 115px;
+}
+
+.aligned-text:first-child {
+  width: 286px;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+/* "тебе" - вторая строка, по центру */
+.aligned-text_center {
+  width: 339px;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* "надо" - третья строка, по правому краю */
+.aligned-text_right {
+  width: 387px;
+  top: 270px;
+  right: 0;
+  text-align: right;
+  letter-spacing: 30px;
+}
+
+/* ДОБАВИТЬ ЭТО! */
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.cover__description-text {
+  font-weight: normal;
+  word-spacing: 18px;
+}
+
+.bet-button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  font-size: 22px;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* ---------------- */
+/* LOTS */
+/* ---------------- */
+.lots {
+    position: absolute;
+    width: 1052px;
+    height: 723px;
+    top: 1230px;
+    left: 24px;
+    padding: 0;
+}
+
+.lots__heading {
+    font-size: 40px;
+    font-weight: bold; /* было 700 */
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    padding-left: 40px;
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.lots__card-list-item {
+    width: 334px;
+    height: 596px;
+    flex-shrink: 0;
+}
+
+.card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+/* Оверлей для карточек */
+.card .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Общие стили для заголовков и текста */
+.card__title {
+    position: absolute;
+    width: 254px;
+    left: 40px;
+    z-index: 2;
+    font-family: Raleway;
+    font-weight: bold; /* было 700 */
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin: 0;
+}
+
+.card__text {
+    position: absolute;
+    width: 254px;
+    left: 40px;
+    z-index: 2;
+    font-family: Raleway;
+    font-weight: normal; /* было 400 */
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0;
+}
+
+/* Конкретные размеры для каждой карточки */
+
+/* Карточка 1 (Фильм) */
+.card_type_film .card__title {
+    height: 82px;
+    top: 48px;
+}
+
+.card_type_film .card__text {
+    height: 144px;
+    top: 404px;
+}
+
+/* Карточка 2 (Книга) */
+.card_type_book .card__title {
+    height: 110px;
+    top: 48px;
+}
+
+.card_type_book .card__text {
+    height: 360px;
+    top: 188px;
+}
+
+/* Карточка 3 (Картина) */
+.card_type_picture .card__title {
+    height: 110px;
+    top: 48px;
+}
+
+.card_type_picture .card__text {
+    height: 264px;
+    top: 284px;
+}
+
+/* Обрезка текста если не помещается */
+.card__text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* Для карточки 1 (Фильм) - 5 строк текста */
+.card_type_film .card__text {
+    -webkit-line-clamp: 5;
+}
+
+/* Для карточки 2 (Книга) - 15 строк текста */
+.card_type_book .card__text {
+    -webkit-line-clamp: 15;
+}
+
+/* Для карточки 3 (Картина) - 11 строк текста */
+.card_type_picture .card__text {
+    -webkit-line-clamp: 11;
+}
+
+.lots__look-more-link {
+    font-size: 20px;
+    margin-left: 40px;
+    text-underline-offset: 5px;
+    color: #000;
+    text-decoration: underline;
+    font-weight: normal; /* добавили */
+}
+
+/* ---------------- */
+/* ABOUT */
+/* ---------------- */
+.about {
+  position: absolute;
+  width: 1052px;
+  height: 595px;
+  top: 2073px;
+  left: 24px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Логотип (левый круг) */
+.about__logo {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  top: 35px;
+  left: 47px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: auto;
+}
+
+/* Правая колонка с текстом */
+.about__column {
+  position: absolute;
+  width: 693px;
+  height: 449px;
+  top: 133px;
+  left: 359px;
+}
+
+/* Заголовок "Об аукционе" */
+.about__title {
+  position: absolute;
+  width: 291px;
+  height: 47px;
+  top: 3px;
+  left: 0;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Контейнер для текста */
+.about__text {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  left: 0;
+  margin: 0;
+}
+
+/* Первый абзац */
+.about__text p:first-child {
+  width: 688px;
+  height: 120px;
+  margin: 0 0 24px 0;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+/* Второй абзац */
+.about__text p:last-child {
+  width: 693px;
+  height: 168px;
+  margin: 0;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+/* ---------------- */
+/* FOOTER */
+/* ---------------- */
+.footer {
+  position: absolute;
+  width: 1100px;
+  height: 180px;
+  top: 2848px;
+  left: calc(50% - 550px);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Контакты (адрес) */
+.footer__address {
+  position: absolute;
+  width: 264.57px;
+  height: 98px;
+  left: 50px;
+  top: 41px; /* (180 - 98) / 2 = 41 */
+  font-style: normal;
+  line-height: 24.3px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__address a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: normal;
+}
+
+/* Меню */
+.footer__menu {
+  position: absolute;
+  width: 163.9px;
+  height: 64px;
+  left: 468.6px;
+  top: 58px; /* (180 - 64) / 2 = 58, но Figma говорит top: 1px? */
+  margin: 0;
+  padding: 0;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__menu-list-item {
+  margin: 0;
+}
+
+.footer__menu-link {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: normal;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+/* Соцсети */
+.footer__social-list {
+  position: absolute;
+  width: 240px;
+  height: 48px;
+  left: 810px;
+  top: 66px; /* (180 - 48) / 2 = 66, но Figma говорит top: 1px? */
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.footer__social-list-item {
+  margin: 0;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
