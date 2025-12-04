@@ -532,7 +532,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Адрес - поднимаем в самый верх */
 .footer__address {
   position: absolute;
   width: 264.57px;
@@ -546,7 +545,6 @@ body {
   padding: 0;
 }
 
-/* Меню - тоже поднимаем */
 .footer__menu {
   position: absolute;
   width: 163.9px;
@@ -557,7 +555,6 @@ body {
   padding: 0;
 }
 
-/* Соцсети - поднимаем */
 .footer__social-list {
   position: absolute;
   width: 240px;
@@ -572,7 +569,6 @@ body {
   justify-content: flex-end;
 }
 
-/* Остальной CSS без изменений */
 .footer__menu-list {
   list-style: none;
   text-align: center;
